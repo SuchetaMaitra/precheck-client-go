@@ -8,7 +8,8 @@ import (
 
 // GetOrder - Returns a specifc order
 func (c *Client) GetOrder(orderID string) (*Order, error) {
-	req, err := http.NewRequest("GET", fmt.Sprintf("%s/users?id=35", "http://localhost:3000"), nil)
+	//req, err := http.NewRequest("GET", fmt.Sprintf("%s/users?id=35", "http://localhost:3000"), nil)
+	req, err := http.NewRequest("GET", fmt.Sprintf("%s/users/%s", c.HostURL, orderID), nil)
 	if err != nil {
 		return nil, err
 	}
