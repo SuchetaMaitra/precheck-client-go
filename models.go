@@ -3,7 +3,7 @@ package precheck
 // Order -
 type Order struct {
 	ID      int         `json:"id,omitempty"`
-	fcpaths []OrderItem `json:"fcpaths,omitempty"`
+	Fcpaths []OrderItem `json:"fcpaths,omitempty"`
 }
 
 // OrderItem -
